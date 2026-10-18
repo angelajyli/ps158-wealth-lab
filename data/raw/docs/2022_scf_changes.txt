@@ -1,0 +1,30 @@
+New Questions:
+
+1)  X19000-X19049, a new COVID-19 section to gauge household
+exxperiences during the pandemic. This section included questions about
+employment changes, challenges paying bills, types of relief received,
+childcare, and health events related to COVID-19
+2)  X7437-X7443, questions asking about which mortgage terms were
+adjusted after a mortgage came out of forebearance
+3)  X442, X443, questions asking about households' use of Buy Now, Pay
+Later programs 
+4)  X7404, question asking if the household's spouse considers
+themselves to be Hispanic or Latino is culture or origin
+5)  X8049-X8054, questions asking about the race of the household's
+spouse 
+6)  X6906, X7796, questions asking how many years the reference person
+and the spouse, respectively, have lived in the United States 
+7)  X6915-X6917, X8055-X8057, questions asking for the national origins
+of the reference person and the spouse, respectively
+
+New Codes:
+
+1)  X7137, a code of 5 indicating that the loan was modified upon exiting
+forebearance was added
+2)  X7023, X7025, X7027, X7029, X7031, X7033 had vehicle make codes 243
+to 251 added
+3)  X7823, X7846, X7869, X7923, X7946, X7969, the student loan institution
+questions had code 23 added
+4)  The industry and occupation codes used in several places throughout
+the survey had several codes updated
+

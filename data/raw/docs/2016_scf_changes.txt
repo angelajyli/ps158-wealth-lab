@@ -1,0 +1,2318 @@
+#####################################
+#TABLE OF CONTENTS
+#1. CHANGES TO EXISTING TEXT
+#2. NEW VARIABLE TEXT
+#3. REMOVED VARIABLES
+#####################################
+
+
+#######################################################################################
+#1. CHANGES TO EXISTING TEXT
+#######################################################################################
+
+####NOTE: METHOD FOR GENERATING THIS INSTITUTION DATA HAS CHANGED
+
+
+X7036(#1)       OFFICES IN MORE THAN ONE STATE. ANSWER DETERMINED BY MATCHING 
+X7038(#2)       VERBATIM ANSWER FROM RESPONDENT TO THE NIC DATABASE OF FINANICAL 
+X7040(#3)       INSTITUIONS
+X7042(#4)
+X7044(#5)            1.    *YES
+X7046(#6)            5.    *NO
+X7048(#7)            0.     Inap. (no institutions: X8300=-1/fewer than 2
+                            institutions: X8300<2/fewer than 3 institutions:
+                            X8300<3/ fewer than 4 institutions: X8300<4/
+                            fewer than 5 institutions: X8300<5/fewer than
+                            6 institutions: X8300<6/fewer than 7 institutions:
+                            X8300<7)
+
+
+X310(#1)        DISTANCE BETWEEN RESPONDENT AND NEAREST INSTITUTION BRANCH. 
+X314(#2)        CALCULATED BY APPLYING THE HAVERSINE METHOD TO THE 
+X318(#3)        LATITUDES AND LONGITUDES OF THE CENTER OF THE RESPONDENT'S 
+X322(#4)        CENSUS TRACT AND NEAREST BRANCH
+X326(#5)
+X330(#6)             0.     Inap. (no institutions: X8300=-1/fewer than 2
+X334(#7)                    institutions: X8300<2/fewer than 3 institutions:
+                            X8300<3/ fewer than 4 institutions: X8300<4/
+                            fewer than 5 institutions: X8300<5/fewer than
+                            6 institutions: X8300<6/fewer than 7 institutions:
+                            X8300<7)
+
+
+####NOTE: INAP REMOVED IN THE FOLLOWING QUESTION
+
+X7122           (Do you have any money automatically deposited directly
+                into your account?/Do you have any money automatically
+                deposited directly into one of your accounts?/
+                Do you or someone in your family living here have any money
+                automatically deposited directly into your family's account?/
+                Do you or someone in your family living here have any money
+                automatically deposited directly into one of your family's
+                accounts?)
+                
+                INCLUDE DIRECT DEPOSIT OF SOCIAL SECURITY OR OTHER
+                GOVERNMENT BENEFITS.
+                
+                (IF R ASKS, DO NOT INCLUDE INTEREST PAID ON THE ACCOUNT.)
+
+                     1.    *YES
+                     5.    *NO
+
+
+####NOTE: INAP REMOVED AND QUESTION TEXT ALTERED SLIGHTLY IN THE FOLLOWING QUESTION
+X7126           Some people have their utility or insurance bills, mortgage
+                or rent payments, or other payments automatically deducted
+                from their accounts without having to write a check or
+                direct the payment using the internet or the phone.
+                Do you (or anyone in your family living here) make any
+                regular payments automatically? 
+                
+                DO NOT INCLUDE PAYROLL DEDUCTIONS, SUCH AS DEDUCTIONS FOR
+                HEALTH INSURANCE.
+
+                     1.    *YES
+                     5.    *NO
+
+
+####NOTE: CHANGED TO TWELVE MONTHS FOR NEXT 2 QUESTIONS
+
+X407            In the past twelve months, has a particular lender or creditor
+                turned down any request you (or your
+                {husband/wife/partner}) made for credit, or not given you
+                as much credit as you applied for?
+                
+                IF YES, PROBE: Were you turned down, or did you not get as much
+                as you applied for?
+
+                IF TURNED DOWN AND NOT AS MUCH CREDIT, ASK WHICH IS MORE
+                RECENT.
+
+                     1.    *Yes, turned down
+                     3.    *Yes, not as much credit
+                     5.    *No
+                     0.     Inap. (no credit application in past twelve months: X433=5 or
+                            X434=5 or X435=5 or X436=5 or X437=5 or X438=5 or
+                            X439=5 or X440=5;)
+
+X409            Was there any time in the past twelve months that you (or your
+                {husband/wife/partner}) thought of applying for credit at a
+                particular place, but changed your mind because you thought
+                you might be turned down?
+
+                     1.    *YES
+                     5.    *NO
+                     0.     Inap. (no credit application in past twelve months: X433=5 or
+                            X434=5 or X435=5 or X436=5 or X437=5 or X438=5 or
+                            X439=5 or X440=5;)
+
+
+####NOTE: DEBIT/CREDIT CARD SECTION ALTERED AND REORDERED
+
+
+                Now I have some questions about the types of cards that people 
+                have for making payments or accessing financial accounts.
+
+X7594           A reloadable prepaid debit card is not linked to a bank or credit union 
+                account, but you or someone else, like a relative, or a 
+                government agency, can add money onto this card.  You can use it 
+                to make purchases and pay bills where credit cards are accepted. 
+                
+                Do you (or anyone in your family living here) have any prepaid debit cards?
+
+                IF ASKED: INCLUDE PAYROLL CARDS FOR WAGES OR SALARY
+                
+                IF ASKED: DO NOT INCLUDE DIRECT EXPRESS CARDS, ELECTRONIC BENEFIT TRANSFER 
+                CARDS (EBT), OTHER GOVERNMENT BENEFIT CARDS, PHONE CARDS, GIFT CARDS FOR 
+                A PARTICULAR STORE OR SERVICE OR CARDS THAT YOU CANNOT ADD MORE MONEY ONTO.
+
+                     1.    *YES
+                     5.    *NO
+
+
+X7648           Do you (or anyone in your family living here) have a government
+                benefit card such as a Direct Express card, or an Electronic Benefit
+                Transfer (EBT) card for WIC or Food Stamps?
+
+                     1.    *YES
+                     5.    *NO
+
+
+X7582           Do you (or anyone in your family living here) have an ATM
+                or debit card?
+                
+                INCLUDE ATM CARDS USED AS DEBIT CARDS AS WELL AS
+                VISA/MASTERCARD/AMERICAN EXPRESS BRANDED DEBIT
+                CARDS. WE CARE ABOUT WHETHER R HAS SUCH A CARD,
+                NOT WHETHER R USES IT.
+
+                DO NOT INCLUDE GOVERNMENT BENEFIT CARDS THAT HAVE
+                ALREADY BEEN REPORTED.
+                DO NOT INCLUDE RELOADABLE PREPAID DEBIT CARDS NOT
+                LINKED TO A BANK OR CREDIT UNION ACCOUNT THAT HAVE
+                ALREADY BEEN REPORTED.
+
+                     1.    *YES
+                     5.    *NO
+
+                Now I have some questions about credit cards and charge cards.
+
+X7973           Do you (or anyone in your family living here) have
+                a credit card such as a Visa, MasterCard, Discover,
+                or American Express card that allows you to carry a
+                balance from month to month that you can pay off
+                over time?
+                
+                IF ASKED: INCLUDE STORE-BRANDED, AIRLINE-BRANDED,
+                AND OTHER BRANDED VISA, MASTERCARD, DISCOVER AND
+                AMEX ACCOUNTS. DO NOT INCLUDE DEBIT CARDS.
+
+                DO NOT INCLUDE CARD USED ENTIRELY FOR BUSINESS.
+
+                     1.    *YES
+                     5.    *NO
+
+
+X7974           Do you (or anyone in your family living here) have a company
+                or store branded credit card tha can only be used at the specific
+                merchant labeled on the card?
+
+                DO NOT INCLUDE CARDS USED ENTIRELY FOR BUSINESS.
+
+                     1.    *YES
+                     5.    *NO
+
+
+X7976           Do you (or anyone in your family living here) have an
+                American Express, Diners Club, or other charge card that
+                must be completely  paid off at the end of each billing
+                period?
+
+                INCLUDE AMERICAN EXPRESS CHARGE (NOT CREDIT) CARDS.
+
+                DO NOT INCLUDE CARDS USED ENTIRELY FOR BUSINESS.
+
+                     1.    *YES
+                     5.    *NO
+                *********************************************************
+                EDIT CHECK:
+                If R reports AmEx as a credit card institution and
+                AmEx/Diners as a separate type of card:
+                   IF (X415/X416/X417/X418/X7500/X6648/
+                       X6649/X6720 = 51) AND (X7976 = YES)
+
+                CAPI text displayed:
+                  ATTENTION:
+                  R ALSO REPORTED A BANK-TYPE CREDIT CARD WITH
+                  AMERICAN EXPRESS.
+                  PLEASE CONFIRM THAT:
+                     1.   THEY ARE TWO DIFFERENT CARDS
+                     2.   THAT THE ONE REPORTED HERE IS A "REGULAR" AMEX
+                           CARD
+
+                  IF THE CARD IS NOT A "REGULAR" AMEX CARD OR A DINERS
+                  OR CARTE BLANCHE CARD, BACK UP ONE SCREEN AND CHANGE
+                  THE ANSWER TO "NO". OTHERWISE, COMMENT NOW OR LATER:
+
+                    COMMENT LATER
+                    COMMENT NOW
+                *********************************************************
+
+
+
+                At this point, a card reconciliation screen shows the FI the 
+                respondent's answers to X7594, X7582, X411, X419, and X425 
+                (Y/N to prepaid card, Y/N to ATM/debit card, number of credit 
+                cards, number of store branded cards, number of charge cards) 
+                and asks the respondent to confirm their responses.  The 
+                reconciliation screen allows the FI to change the Yes/No response 
+                or number of cards for these five questions if any mistakes have 
+                been made.
+
+
+
+X412(#1)        Thinking about the [number from (X419/X411/X425)] (credit/
+X420(#2)        company or store branded/charge) card(s) (you have/your family
+X426(#3)        has):
+
+                On your last bill(s), how much were the new charges
+                made to (this account/these accounts)?
+                
+                IF R DID NOT RECEIVE A BILL LAST MONTH, CODE ZERO.
+                
+                $ AMOUNT:
+                    -1.     None
+                     0.     Inap. (no cards of type)
+                *********************************************************
+                    ORIGINALLY ALLOWED VALUES: [0,...,9999999]
+                
+                    IF < 0 OUT OF RANGE: ILLEGAL VALUE ERROR MESSAGE
+                *********************************************************
+
+
+
+
+####NOTE: ALTERNATE WORDING ADDED
+
+X631            IF R PURCHASED:
+                How much did this site cost when you originally acquired it?
+
+                IF GIFT/INHERITANCE:
+                What was the value when you received this site?
+                
+                INTERVIEWER:  IF GIFT/INHERITANCE, ASK VALUE WHEN RECEIVED.
+                
+                $ AMOUNT:
+                     0.     Inap. (R does not live in MH: X501^=2; other MH
+                            ownership: X601^=1; home and site not purchases
+                            separately: X624^=1)
+                *********************************************************
+                    ORIGINALLY ALLOWED VALUES: [1,...,9999999]
+                
+                    IF < 1 OUT OF RANGE: ILLEGAL VALUE ERROR MESSAGE
+                *********************************************************
+
+
+X717            IF R PURCHASED:
+                How much did it cost when you originally acquired it?
+
+                IF GIFT/INHERITANCE:
+                What was the value when you received it?
+                
+                IF PROPERTY WAS PURCHASED SEPARATELY, WE WANT THE TOTAL
+                COST OF LAND AND HOUSE.
+                INCLUDE RENOVATION AND CONSTRUCTION COSTS INCURRED
+                BEFORE R MOVED IN.
+                
+                $ AMOUNT:
+                     0.     Inap. (R lives in MH: X501=2; R owns neither farm
+                            nor other type of dwelling: X508^=(1, 2)
+                            and X701^=(1, 3, 4, 5, 6, 8) and
+                            X7133^=1)
+                *********************************************************
+                    ORIGINALLY ALLOWED VALUES: [1,...,999999999]
+                
+                    IF < 1 OUT OF RANGE: ILLEGAL VALUE ERROR MESSAGE
+                *********************************************************
+
+####NOTE: CODE 23 ALTERED
+
+
+X6723(#1)       For what purpose was the money used?
+                
+                MASTER LOAN PURPOSE LIST
+
+                     1.     Own home purchase/construction
+                     3.     Home improvements or additions (incl. assessments
+                            for sewer/sidewalk, etc.)
+                     4.     Home repairs/maintenance/upkeep
+                    10.     Car, including repossessed car
+                    11.     Refrigerator
+                    12.     Stove/range; microwave oven
+                    13.     Dishwasher
+                    14.     Freezer
+                    15.     Air conditioner; furnace
+                    16.     Washing machine (incl. washer/dryer combination)
+                    17.     Dryer
+                    18.     Furniture (excluding pianos and organs -- see code
+                            34); lamps; mattress and spring combinations; rug
+                            and/or carpet; other household furnishings
+                    20.     Vacuum cleaners
+                    23.     Home computer; calculator; cellphone; smartphone
+                    24.     Truck/jeep/utility vehicle
+                    25.     Combination of appliances (incl. TV); "appliances"
+                            -- NA type
+                    26.     Combination of furniture and appliances
+                    29.     Other appliances or durable goods; sewing machine;
+                            typewriter
+                    31.     Stereo; phonograph (may include radio); include
+                            sound equipment; amplifiers here; radio (AM or
+                            FM); tuner; CB equipment; tape recorder, tape
+                            player (cassette or reel-to-reel); CD player
+                    34.     Piano; Organ
+                    35.     Musical instruments (excl. piano and organ)
+                    36.     TV -- color or black and white; "home entertainment
+                            center" (including combination TV, radio,
+                            phonograph); video cassette recorder/player
+                            (VCR); video camera (Cam-corder); satellite dish
+                    49.     Other small/indoor hobby, recreation, and
+                            entertainment items (incl. pool tables and
+                            regular cameras)
+                    50.     Power tools and yard equipment
+                    61.     Boat; boating equipment (incl. trailer), airplane,
+                            airplane equipment
+                    63.     Motorcycles; bicycle; moped; snowmobiles;
+                            off-road vehicles
+                    65.     Camper-trailers; RV, n.f.s.
+                    67.     Cottage; vacation property; mobile homes --
+                            seasonal residence (if current residence, code
+                            01); "motor home"; second home
+                    69.     Other outdoor recreation items; horse
+                    74.     Invest in own business
+                    75.     "Business investment" (exc. 74), incl. businesses
+                            now defunct
+                    76.     Other asset investment; bought stocks/bonds; IRA
+                            deposit; gold; "investment", n.f.s.
+                    78.     Investment real estate (incl. cemetery plots and
+                            additions and repairs to investment property);
+                            farmland (exc. 74); vacation property
+                    79.     To have cash reserve
+                    80.     Divorce/separation expenses
+                    81.     Travel/vacation expenses
+                    82.     Medical/dental/veterinary expenses; attorney's
+                            fees
+                    83.     Education/school expenses
+                    84.     Tax and insurance expenses (exc. vehicle, code 93)
+                    85.     Weddings/funerals/other "occasions"
+                    86.     Legal judgment against R; money owed on
+                            overpayment of benefits
+                    88.     Moving expenses
+                    89.     Other special expenses; encyclopedia; health
+                            membership
+                    90.     "Personal loan"--NA what for
+                    91.     Bill/debt consolidation; "bills"
+                    92.     Personal items, incl. clothing, jewelry
+                    93.     Vehicle repair/upkeep (incl. insurance)
+                    94.     Gifts; goods or gifts of money; "Christmas"
+                    95.     Living/general expenses
+                    96.     Loans made to others; "loaned friend/son money
+                            for a house"
+                    97.     Charitable or political contributions
+                    -7.     Other (including combinations)
+                     0.     Inap. (does not own any part of HU or owns only
+                            mobile home and not site: X508^=(1, 2)
+                            and X601^=(1, 2) and X701^=(1, 3, 4, 5,
+                            6, 8) and X7133^=1; land contact:
+                            X723=2; no mortgage: X723=5; year of
+                            mortgage same as year of purchase:
+                            X802= one of X606, X611, X616,
+                            X630, X634, or X720; additional money not
+                            taken out on loan: X7137^=(2, 3, 4);)
+                *********************************************************
+                  THE FOLLOWING NEW CATEGORIES HAVE BEEN CREATED FOR THE
+                  PUBLIC DATA SET:
+                  IF (loan purpose type=1 or 67) THEN newcode=1;
+                  ELSE IF (loan purpose type=3 or 4) THEN newcode=2;
+                  ELSE IF (loan purpose type=10 or 24) THEN newcode=3;
+                  ELSE IF (loan purpose type=11, 12, 13, 14, 15, 16,
+                    17, 18, 20, 25, 26, or 29) THEN newcode=4;
+                  ELSE IF (loan purpose type=23, 31, 34, 35, 36, 49,
+                    50, or 69) THEN newcode=5;
+                  ELSE IF (loan purpose type=61, 63, or 65) THEN
+                    newcode=6;
+                  ELSE IF (loan purpose type=74, 75, 76, 78, or 79)
+                    THEN newcode=7;
+                  ELSE IF (loan purpose type=80, 81, 85, 88, or 89)
+                    THEN newcode=8;
+                  ELSE IF (loan purpose type=82 or 83) THEN newcode=9;
+                  ELSE IF (loan purpose type=84, 86, 90, 91, 92, 93, 94,
+                    95, 96, or 97) THEN newcode=10;
+                *********************************************************
+
+
+####NOTE: NEGATIVE VALUE NOW ALLOWED
+
+X1730(#1)       How much net income did (you/your family) receive?
+X1830(#2)       
+                $ AMOUNT:
+                    -1.     Nothing
+                     0.     Inap. (no properties: X1700=5; no properties not
+                            owned by a business: X1701=-1/fewer than
+                            2 properties: X1701<2; no income from
+                            property: X1719^-1/X1819^=-1)
+                *********************************************************
+                    ORIGINALLY ALLOWED VALUES: [-999999999,...,999999999]
+                
+                    IF < 0, OUT OF RANGE: ILLEGAL VALUE ERROR MESSAGE
+                *********************************************************
+
+
+
+
+####NOTE: CODE 21 ADDED
+
+X3164 X3165 X3166 X3167 X3168 X3169 X3170 X3171 (#1)
+X3264 X3265 X3266 X3267 X3268 X3269 X3270 X3271 (#2)
+
+                (SHOW CARD 7)
+                What types of business services or products are currently used
+                or obtained from this institution?
+     
+                CODE ALL THAT APPLY: CODE RESPONSES IN THE ORDER THEY ARE GIVEN
+
+                     1.    *Business checking or share draft accounts
+                     2.    *Business savings, money market, brokerage, or trust
+                            accounts
+                     3.    *Business lines of credit
+                     4.    *Business mortgages
+                     5.    *Other business loans or leases
+                     6.    *Business credit cards
+                     7.    *Credit or debit card payment processing /
+                            electronic transfers
+                    10.    *Payroll
+                    20.     Line of credit, n.e.c.
+                    21.    *Business consulting
+                    -1.     None
+                    -7.    *OTHER
+                     0.     Inap. (/no further responses; no businesses: X3103^=1;
+                            no actively managed businesses: X3104^=1/fewer
+                            than 2 actively managed businesses: X3105<2;
+                            business has 500 or more employees:
+                            X3111>=500/X3211>=500; no institution used:
+                            X3160=-1/X3260=-1)
+
+####NOTE: QUESTION WORDING CHANGED FOR NEXT 2 QUESTIONS
+
+X3336(#3)       For these remaining businesses, if you sold these
+                businesses now, what would be the cost basis for
+                tax purposes of your share?
+
+                PROBE IF R UNSURE:
+                What was your original investment?
+                
+                $ AMOUNT:
+                    -1.     Nothing
+                     0.     Inap. (no businesses: X3103^=1; no actively managed
+                            businesses: X3104^=1; fewer than 3 actively managed
+                            businesses: X3105<2)
+                *********************************************************
+                    ORIGINALLY ALLOWED VALUES: [0,...,999999999]
+                
+                    IF < 0, OUT OF RANGE: ILLEGAL VALUE ERROR MESSAGE
+                *********************************************************
+
+X3337(#3)       For these remaining businesses, what was the total
+                net income you (and your family living here) received
+                from these businesses in 2015?
+                
+                $ AMOUNT:
+                    -1.     Nothing
+                     0.     Inap. (no businesses: X3103^=1; no actively managed
+                            businesses: X3104^=1; fewer than 3 actively managed
+                            businesses: X3105<2)
+                *********************************************************
+                    ORIGINALLY ALLOWED VALUES: [-999999999,...,999999999]
+                
+                    IF OUT OF RANGE: ILLEGAL VALUE ERROR MESSAGE
+                *********************************************************
+
+
+####NOTE: FIVE YEARS CHANGED TO TWELVE MONTHS IN THE NEXT 3 QUESTIONS
+
+X3175           (Has the business/Have any of the businesses) applied for
+                any type of credit or loan in the past twelve months?
+
+                     1.    *YES
+                     5.    *NO
+                     0.     Inap. (no businesses: X3103^=1; no actively managed
+                            businesses: X3104^=1; no businesses with less
+                            than 500 employees: X3174^=1)
+
+
+X3176           In the past twelve months, has a particular lender or
+                creditor turned down any request (the business/
+                any of the businesses) made for credit, or not
+                given the business as much credit as requested?
+                
+                IF YES, PROBE: Turned down, or not as much credit?
+                IF TURNED DOWN AND NOT AS MUCH CREDIT, ASK
+                WHICH IS MORE RECENT.
+
+                     1.    *Yes, turned down
+                     3.    *Yes, not as much credit
+                     5.    *No
+                     0.     Inap. (no businesses: X3103^=1; no actively managed
+                            businesses: X3104^=1; no businesses with less
+                            than 500 employees: X3174^=1; no credit or loan
+                            applications in the past five years: X3175^=1)
+
+X3179           Was there any time in the past twelve months that (the business/
+                any of the businesses) thought of applying for credit at a
+                particular place, but decided not to because it was thought it
+                might be turned down?
+
+                     1.    *YES
+                     5.    *NO
+                     0.     Inap. (no businesses: X3103^=1; no actively managed
+                            businesses: X3104^=1; no businesses with less
+                            than 500 employees: X3174^=1)
+
+
+####NOTE: VEHICLE INFORMATION ENTRY METHOD WAS ALTERED
+
+                TO SEE THE FULL LIST OF MAKES OR MODELS, ENTER AN ASTERISK
+                (*) INTO THE APPROPRIATE TEXTBOX BY PUSHING THE SHIFT AND
+                8 KEY AT THE SAME TIME.
+                IF YOU CANNOT FIND A NAME IN THE MAKE, MODEL, OR YEAR LIST,
+                TYPE THE RESPONSE IN THE APPROPRIATE BOX.
+
+                What model year, make and model is it?
+                
+                PROBE FOR FULL MODEL NAME.
+
+                MASTER VEHICLE MANUFACTURER LIST
+
+X7023(#1)       MAKE:
+X7025(#2)
+
+                *********************************************************
+                    ORIGINALLY ALLOWED VALUES: [1900,...,9999]
+                
+                    IF < 1900 OUT OF RANGE: ILLEGAL VALUE ERROR MESSAGE
+                
+                    IF > X8095 + 1: GREATER THAN NEXT YEAR ERROR MESSAGE
+                *********************************************************
+                    NOT INCLUDED IN THE PUBLIC DATA SET
+                *********************************************************
+
+X7024(#1)       MODEL:
+X7026(#2)            0.     Inap. (no personally leased vehicles: X2101^=1/
+                            fewer than 2 leased vehicles: X2101<2)
+                *********************************************************
+                    NOT INCLUDED IN THE PUBLIC DATA SET
+                *********************************************************
+
+
+X2104(#1)       MODEL YEAR:
+X2111(#2)            0.     Inap. (no personally leased vehicles: X2101^=1/
+                            fewer than 2 leased vehicles: X2101<2)
+                *********************************************************
+                    ORIGINALLY ALLOWED VALUES: [X8095-20,...,X8095]
+
+                    IF OUT OF RANGE: ILLEGAL VALUE ERROR MESSAGE
+                *********************************************************
+                    FOR THE PUBLIC DATA SET, BOTTOM-CODED
+                    AT X8095-20
+                *********************************************************
+
+
+
+                TO SEE THE FULL LIST OF MAKES OR MODELS, ENTER AN ASTERISK
+                (*) INTO THE APPROPRIATE TEXTBOX BY PUSHING THE SHIFT AND
+                8 KEY AT THE SAME TIME.
+                IF YOU CANNOT FIND A NAME IN THE MAKE, MODEL, OR YEAR LIST,
+                TYPE THE RESPONSE IN THE APPROPRIATE BOX.
+
+                What model year, make and model is it?
+                
+                PROBE FOR FULL MODEL NAME.
+                
+                See MASTER VEHICLE MANUFACTURER LIST at X7023
+
+X7027(#1)       MAKE:
+X7029(#2)            0.     Inap. (no owned cars etc.: X2201^=1/fewer than 2
+X7031(#3)                   cars: X2202<2/fewer than 3 cars: X2202<3/
+X7033(#4)                   fewer than 4 cars: X2202<4)
+                *********************************************************
+                    NOT INCLUDED IN THE PUBLIC DATA SET
+                *********************************************************
+
+
+X7028(#1)       MODEL:
+X7030(#2)            0.     Inap. (no owned cars etc.: X2201^=1/fewer than 2
+X7032(#3)                   cars: X2202<2/fewer than 3 cars: X2202<3/
+X7034(#4)                   fewer than 4 cars: X2202<4)
+                *********************************************************
+                    NOT INCLUDED IN THE PUBLIC DATA SET
+                *********************************************************
+
+
+X2205(#1)       MODEL YEAR:
+X2305(#2)            0.     Inap. (no owned cars etc.: X2201^=1/fewer than 2
+X2405(#3)                   cars: X2202<2/fewer than 3 cars: X2202<3/
+X7152(#4)                   fewer than 4 cars: X2202<4)
+                *********************************************************
+                    ORIGINALLY ALLOWED VALUES: [1900,...,X8095+1]
+                
+                    IF < 1900 OUT OF RANGE: ILLEGAL VALUE ERROR MESSAGE
+                
+                    IF > X8095 + 1: GREATER THAN NEXT YEAR ERROR MESSAGE
+                *********************************************************
+                    FOR THE PUBLIC DATA SET, BOTTOM-CODED
+                    AT X8095-20
+                *********************************************************
+
+
+
+####NOTE: TRACTORS NOW TAKEN HERE
+
+X2503           Do you (or anyone in your family living here) own any other
+                vehicles such as a motor home, RV, motorcycle, boat, or
+                airplane?
+                
+                INCLUDE ANIMAL TRAILERS, GOLF CARTS, SNOWMOBILES, 
+                GLIDERS, ETC.  DO NOT INCLUDE LAWN MOWERS
+
+                     1.    *YES
+                     5.    *NO
+
+####NOTE: ALL VARIABLES CHANGED IN EDUCATION SECTION. INAP STRUCTURE CHANGED. 
+####      QUESTION TEXT CHANGED. 
+####      TEXT NOW DEPENDS ON WHOSE LOAN IT IS. 'YOU' BECAME 'YOU/HE/SHE/THEY' ETC.
+####      DID NOT INCLUDE EVERY EDUCATION LOAN QUESTION
+
+X7801           Do you (and your family living here) owe any money or have
+                any student loans for educatinal expenses?
+                
+                IF YES: Please do not include any credit cards or other
+                loans I have already recorded.
+                
+                DO NOT INCLUDE TUITION BILLS THAT HAVE ARRIVED BUT ARE
+                NOT YET PAID.
+
+                     1.    *YES
+                     5.    *NO
+
+
+X7806(#1)       (Are you/Is he/Is she/Is he or she) making payments on this
+X7829(#2)       loan now?
+X7852(#3)
+X7906(#4)            1.    *YES
+X7929(#5)            5.    *NO
+X7952(#6)            0.     Inap. (no education loans: X7801^=1/less than 2
+                            loans; X7802<2/less than 3 loans:
+                            X7802<3/less than 4 loans: X7802<4/
+                            less than 5 loans: X7802<5/less than 6
+                            loans: X7802<6; still enrolled: X7880=-1/
+                            X7885=-1/ X7890=-1/X7895=-1/X7900=-1/
+                            X7995=- 1)
+
+
+####NOTE: NEVER OPTION ADDED
+
+
+                When will (you/he/she/he or she) start paying on this
+                loan?
+                
+                IF PEU NEVER EXPECTS TO START PAYING ON LOAN,
+                PRESS [F6] FOR MONTH AND YEAR AND MAKE AN
+                [F2] COMMENT
+
+X7807(#1)       MONTH:
+X7830(#2)            1.    *January
+X7853(#3)            2.    *February
+X7907(#4)            3.    *March
+X7930(#5)            4.    *April
+X7953(#6)            5.    *May
+                     6.    *June
+                     7.    *July
+                     8.    *August
+                     9.    *September
+                    10.    *October
+                    11.    *November
+                    12.    *December
+                    -1.     Never
+                     0.     Inap. (no education loans: X7801^=1/less than 2
+                            loans; X7802<2/less than 3 loans:
+                            X7802<3/less than 4 loans: X7802<4/
+                            less than 5 loans: X7802<5/less than 6
+                            loans: X7802<6; paying on loan now:
+                            X7806^=5/X7829^=5/X7852^=5/
+                            X7906^=5/X7929^=5/X7952^=5;
+                            loan fully forgiven: X7421=1/X7423=1/
+                            X7425=1/X7427=1/X7429=1/X7431=1)
+                *********************************************************
+                    ORIGINALLY ALLOWED VALUES: [1,...,12]
+                
+                    IF OUT OF RANGE: ILLEGAL VALUE ERROR MESSAGE
+                *********************************************************
+                    NOT INCLUDED IN THE PUBLIC DATA SET
+                *********************************************************
+
+
+X7808(#1)       YEAR:
+X7831(#2)           -1.     Never
+X7854(#3)            0.     Inap. (no education loans: X7801^=1/less than 2
+X7908(#4)                   loans; X7802<2/less than 3 loans:
+X7931(#5)                   X7802<3/less than 4 loans: X7802<4/
+X7954(#6)                   less than 5 loans: X7802<5/less than 6
+                            loans: X7802<6; paying on loan now:
+                            X7806^=5/X7829^=5/X7852^=5/
+                            X7906^=5/X7929^=5/X7952^=5;
+                            loan fully forgiven: X7421=1/X7423=1/
+                            X7425=1/X7427=1/X7429=1/X7431=1)
+                *********************************************************
+                    ORIGINALLY ALLOWED VALUES: [X8095,...,X8095+50]
+                
+                    IF < X8095 OUT OF RANGE: ILLEGAL VALUE ERROR MESSAGE
+                *********************************************************
+
+
+X7809(#1)       Is this loan accumulating interest which (you/he/she/he or she)
+X7832(#2)       will eventually have to pay?
+X7855(#3)
+X7909(#4)            1.    *YES
+X7932(#5)            5.    *NO
+X7955(#6)            0.     Inap. (no education loans: X7801^=1/less than 2
+                            loans; X7802<2/less than 3 loans:
+                            X7802<3/less than 4 loans: X7802<4/
+                            less than 5 loans: X7802<5/less than 6
+                            loans: X7802<6; paying on loan now:
+                            X7806^=5/X7829^=5/X7852^=5/
+                            X7906^=5/X7929^=5/X7952^=5;
+                            loan fully forgiven: X7421=1/X7423=1/
+                            X7425=1/X7427=1/X7429=1/X7431=1)
+
+
+####NOTE: REGUALR/TYPICAL PAYMENT OPTION REMOVED
+
+X7815(#1)       How much are the payments (on this loan)?
+X7838(#2)       
+X7861(#3)       $ AMOUNT:
+X7915(#4)           -1.     Nothing
+X7938(#5)            0.     Inap. (no education loans: X7801^=1/less than 2
+X7961(#6)                   loans; X7802<2/less than 3 loans:
+                            X7802<3/less than 4 loans: X7802<4/
+                            less than 5 loans: X7802<5/less than 6
+                            loans: X7802<6; not paying on loan now:
+                            X7806^=1/X7829^=1/X7852^=1/X7906^=1/
+                            X7929^=1/X7952^=1; still enrolled: X7880=-1/
+                            X7885=-1/ X7890=-1/X7895=-1/X7900=-1/
+                            X7995=- 1)
+                *********************************************************
+                    ORIGINALLY ALLOWED VALUES: [0,...,99999]
+                
+                    IF < 0, OUT OF RANGE: ILLEGAL VALUE ERROR MESSAGE
+                *********************************************************
+                EDIT CHECK:
+                If payment is zero:
+                
+                  IF (X7815/X7838/X7861/X7915/X7938/X7961)=-1
+                
+                CAPI TEXT DISPLAYED:
+                  ATTENTION:
+                  R REPORTED MAKING PAYMENTS ON THIS LOAN, BUT
+                  THE PAYMENT AMOUNT IS ZERO? CONFIRM R IS MAKING
+                  LOAN PAYMENTS.
+
+                      COMMENT NOW
+                      COMMENT LATER
+                *********************************************************
+
+
+####NOTE: QUESTION TEXT CHANGED
+
+X7822(#1)       What is the annual rate of interest charged
+X7845(#2)       on this loan?
+X7868(#3)
+X7922(#4)       IF R IS NOT ACCUMULATING INTEREST ON THE
+X7945(#5)       LOAN, SAY:
+X7968(#6)       What interest rate will be charged when the
+                loan starts accumulating interest?
+                
+                PERCENT * 100:
+                    -1.     Nothing
+                     0.     Inap. (no education loans: X7801^=1/less than 2
+                            loans; X7802<2/less than 3 loans:
+                            X7802<3/less than 4 loans: X7802<4/
+                            less than 5 loans: X7802<5/less than 6
+                            loans: X7802<6; loan fully forgiven:
+                            X7421=1/X7423=1/X7425=1/X7427=1/
+                            X7429=1/X7431=1)
+                *********************************************************
+                    ORIGINALLY ALLOWED VALUES: [0,...,100]
+                
+                    IF OUT OF RANGE: ILLEGAL VALUE ERROR MESSAGE
+                *********************************************************
+
+
+####NOTE: EDUCATION INSTITUIONS LISTED EXPLICITLY
+
+X7823(#1)       (SHOW CARD 8)
+X7846(#2)
+X7869(#3)       Who is the servicer for this education loan, that is to say the name of the
+X7923(#4)       company who receives the payment for this loan?
+X7946(#5)
+X7969(#6)            1.    *Aspire Resources Inc.
+                     2.    *CornerStone
+                     3.    *ESA/EdFinancial
+                     4.    *FedLoan Servicing/AES (PHEAA)
+                     5.    *Granite State - GSMR
+                     6.    *Great Lakes Educational Services, Inc.
+                     7.    *MOHELA
+                     8.    *Navient (formerly Sallie Mae)
+                     9.    *Nelnet (Firstmark)
+                    10.    *OSLA Servicing
+                    11.    *VSAC Federal Loans
+                    12.    *Discover Financial Services
+                    13.    *The First Marblehead Corporation
+                    14.    *JP Morgan Chase Bank
+                    15.    *PNC Bank
+                    16.    *SunTrust Bank
+                    17.    *U.S. Bank
+                    18.    *Wells Fargo Bank
+                    19.    *RBS Citizens
+                    20.     ACS (Xerox)
+                    21.     Credit Union
+                    22.     Citibank
+                    32.    *College or University
+                    43.     Collection Agency, n.e.c.
+                    95.     Non-financial institution, n.e.c.
+                    98.     Financial institution, n.e.c.
+                    -7.    *Other
+                     0.     Inap. (no education loans: X7801^=1/less than 2
+                            loans; X7802<2/less than 3 loans:
+                            X7802<3/less than 4 loans: X7802<4/
+                            less than 5 loans: X7802<5/less than 6
+                            loans: X7802<6; loan fully forgiven:
+                            X7421=1/X7423=1/X7425=1/X7427=1/
+                            X7429=1/X7431=1)
+
+####NOTE: INTEREST RATE HIGHER THAN 100% OPTION ADDED
+
+X2724(#1)       What is the current annual rate of interest being charged
+X2741(#2)       on this loan?
+X2824(#3)
+X2841(#4)       IF INTEREST RATE IS HIGHER THAN 100%, ENTER 100%
+X2924(#5)       AND MAKE AN [F2] COMMENT
+X2941(#6)       
+                PERCENT * 100:
+                    -1.     Nothing
+                     0.     Inap. (no such loans: X7182=5/fewer than 2 loans:
+                            X2709<2/fewer than 3 loans: X2709<3/
+                            fewer than 4 loans: X2709<4/fewer than 5
+                            loans: X2709<5/fewer than 6 loans:
+                            X2709<6)
+                *********************************************************
+                    ORIGINALLY ALLOWED VALUES: [0,...,100]
+                
+                    IF OUT OF RANGE: ILLEGAL VALUE ERROR MESSAGE
+                *********************************************************
+
+
+####NOTE: CHANGED TO 'ALL SOURCES' FROM 'SOCIAL SECURITY AND JOB PENSIONS'
+
+X3023           Using any number from one to five, where one equals totally
+                inadequate and five equals very satisfactory, how would you 
+                rate the retirement income you receive (or expect to
+                receive) from all sources?
+                  
+                INCLUDE 401(K) ACCOUNTS AND ALL OTHER TYPES OF PENSIONS
+
+                     1.    *TOTALLY INADEQUATE
+                     2.
+                     3.    *ENOUGH TO MAINTAIN LIVING STANDARDS
+                     4.
+                     5.    *VERY SATISFACTORY
+
+####NOTE: QUESTION TEXT CHANGED
+
+X3024           Now I have some questions about your spending. About how much
+                do you (and everyone else in your family) spend on food
+                that you use at home?  (What is your best estimate?)
+                
+                IF R SHARES EXPENSES WITH ROOMMATES NOT IN THE PEU, INCLUDE
+                ONLY R'S (FAMILY'S) SHARE.
+                THIS INCLUDES LUNCHES FOR WORK, ETC. MADE AT HOME.
+                INCLUDE FOOD PAID FOR USING FOOD STAMPS.
+                
+                $ AMOUNT:
+                    -1.     Nothing
+                *********************************************************
+                    ORIGINALLY ALLOWED VALUES: [0,...,9999999]
+                
+                    IF < 0, OUT OF RANGE: ILLEGAL VALUE ERROR MESSAGE
+                *********************************************************
+
+####NOTE: CODE 31 ADDED
+
+X6555(#1)       How is the money in (this/these) account(s) invested?  Is
+X6563(#2)       it all in stocks, all in interest-earning assets, is it
+X6571(#3)       split between these, or something else?
+                
+                IF R SAYS "MUTUAL FUND", PROBE FOR WHETHER IT IS A STOCK 
+                FUND, A BOND FUND, OR ONE SPLIT OVER BOTH TYPES
+
+                     1.    *ALL IN STOCKS
+                     2.    *ALL IN INTEREST EARNING ASSETS/BONDS
+                     3.    *SPLIT
+                     4.     Real estate
+                     5.     Hedge fund
+                     6.     Annuities
+                     8.     Mineral rights
+                     9.     GIC/guaranteed income contract
+                    12.     Business investment n.e.c.
+                    13.     Commodities
+                    15.     Life insurance
+                    25.     Non publicly traded business or other such
+                            investment
+                    30.    *MUTUAL FUND (NOT A PREFERRED RESPONSE)
+                    31.    *ETF
+                    -7.    *OTHER
+                     0.     Inap. (no IRA/Keogh accounts: X3601^=1; no
+                            IRA/Keoghs: X3601^=1/no spouse or
+                            partner in PEU: X107^=1/no other PEU
+                            members: (X113, X119, X125, X131,
+                            X137, X207, X213, X219, X225,
+                            X231)^=1; person has no account:
+                            X3602^=1/X3612^=1/X3622^=1)
+
+####NOTED: 'IF NEEDED' NOTE ADDED
+
+X6558(#1)       How much in total did (you/your {husband/wife/partner}/they)
+X6566(#2)       withdraw in 2015?
+X6574(#3)
+                IF NEEDED: THE AMOUNT REPORTED HERE SHOULD BE THE GROSS
+                WITHDRAWAL AMOUNT, NOT THE AFTER-TAX WITHDRAWAL AMOUNT.
+                
+                $ AMOUNT:
+                     0.     Inap. (no IRA/Keogh accounts: X3601^=1; no
+                            IRA/Keoghs: X3601^=1/no spouse or
+                            partner in PEU: X107^=1/no other PEU
+                            members: (X113, X119, X125, X131,
+                            X137, X207, X213, X219, X225,
+                            X231)^=1; person has no account:
+                            X3602^=1/X3612^=1/X3622^=1;
+                            no withdrawals: X6557^=1/X6565^=1/
+                            X6573^=1)
+
+####NOTE: CODE 31 ADDED
+
+X7074(#1)       How is the money in this account invested?  Is it all
+X7077(#2)       in stocks, all in interest-earning assets, is it split
+X7080(#3)       between these, or something else?
+X7083(#4)       
+X7086(#5)       IF R SAYS "MUTUAL FUND", PROBE FOR WHETHER IT IS A STOCK 
+X7089(#6)       FUND, A BOND FUND, OR ONE SPLIT OVER BOTH TYPES
+
+                     1.    *ALL IN STOCKS
+                     2.    *ALL IN INTEREST EARNING ASSETS/BONDS
+                     3.    *SPLIT
+                     4.     Real estate
+                     5.     Hedge fund
+                     6.     Annuities
+                     8.     Mineral rights
+                     9.     GIC/Guaranteed Income Contract
+                    12.     Business investment n.e.c.
+                    15.     Life insurance
+                    25.     Non publicly traded business or other such
+                            investment
+                    30.     Mutual fund (not a preferred response)
+                    31.    *ETF
+                    -1.     None
+                    -7.    *OTHER
+                     0.     Inap. (no savings accounts: X3727^=1/fewer than 2
+                            accounts: X3728<2/fewer than 3 account: X3728<3/
+                            fewer than 4 accounts: X3728<4/fewer than 5
+                            accounts: X3728<5/fewer than 6 accounts; a
+                            traditional account, a MM account, an informal
+                            group account, a foreign account or a sweep
+                            account: X3732=(1, 4, 5, 6, 12, 14, 20, 30)/
+                            X3738=(1, 4, 5, 6, 12, 14, 20, 30)/
+                            X3744=(1, 4, 5, 6, 12, 14, 20, 30)/
+                            X3750=(1, 4, 5, 6, 12, 14, 20, 30)/
+                            X3756=(1, 4, 5, 6, 12, 14, 20, 30)/
+                            X3762=(1, 4, 5, 6, 12, 14, 20, 30))
+                *********************************************************
+                    FOR THE PUBLIC DATA SET, CODES 4, 5, 6, 8, 12, 15, AND
+                    25 ARE COMBINED WITH CODE -7; CODE 9 IS COMBINED WITH
+                    CODE 2
+                *********************************************************
+
+
+####NOTE: ETF REFERENCES ADDED FOR ALL THE FOLLOWING VARS
+
+X3821           I need to know what types of funds you have.  Do you
+                have. . .
+                
+                stock mutual funds or ETFs?
+                
+                (IF R ASKS, STOCK FUNDS INCLUDE DOMESTIC STOCK FUNDS,
+                GROWTH FUNDS, INDEX FUNDS, GLOBAL STOCK FUNDS, SECTOR
+                FUNDS, AND ANY OTHER TYPE OF FUND PRIMARILY INVESTED
+                IN STOCK.)
+
+                     1.    *YES
+                     5.    *NO
+                     0.     Inap. (no mutual funds or hedge funds: X3819^=1)
+
+
+X3822           What is the total market value of all of the stock mutual
+                funds and ETFs that you (and your family living here) have?
+                
+                $ AMOUNT:
+                     0.     Inap. (no mutual funds or hedge funds: X3819^=1;
+                            no stock funds: X3821^=1)
+                *********************************************************
+                    ORIGINALLY ALLOWED VALUES: [1,...,9999999999]
+                
+                    IF < 1, OUT OF RANGE: ILLEGAL VALUE ERROR MESSAGE
+                *********************************************************
+
+
+X3823           Do you have. . .
+                
+                tax-free bond mutual funds or ETFs?
+                
+                THESE FUNDS INCLUDE MUNICIPAL BONDS ('MUNIs') AND
+                OTHER TAX-EXEMPT BONDS
+
+                     1.    *YES
+                     5.    *NO
+                     0.     Inap. (no mutual funds or hedge funds: X3819^=1)
+
+
+X3824           What is the total market value of all of the tax-free bond
+                mutual funds and ETFs that you (and your family living here) have?
+
+                $ AMOUNT:
+                     0.     Inap. (no mutual funds or hedge funds: X3819^=1;
+                            no tax-free bond funds: X3823^=1)
+                *********************************************************
+                    ORIGINALLY ALLOWED VALUES: [1,...,9999999999]
+                    IF < 1, OUT OF RANGE: ILLEGAL VALUE ERROR MESSAGE
+                *********************************************************
+
+
+X3825           Do you have. . .
+                
+                U.S. government or government backed bond mutual funds or ETFs?
+                
+                THESE FUNDS INCLUDE U.S. TREASURY BILLS AND BONDS AND OTHER
+                U.S. GOVERNMENT-SPONSORED BONDS.
+
+                     1.    *YES
+                     5.    *NO
+                     0.     Inap. (no mutual funds or hedge funds: X3819^=1)
+
+
+X3826           What is the total market value of all of the U.S. government
+                or government backed bond mutual funds and ETFs that you (and
+                your family living here) have?
+                
+                $ AMOUNT:
+                     0.     Inap. (no mutual funds or hedge funds: X3819^=1;
+                            no government or government backed bond
+                            funds: X3825^=1)
+                *********************************************************
+                    ORIGINALLY ALLOWED VALUES: [1,...,9999999999]
+                
+                    IF < 1, OUT OF RANGE: ILLEGAL VALUE ERROR MESSAGE
+                *********************************************************
+
+
+X3827           Do you have. . .
+                
+                other bond mutual funds or ETFs?
+                
+                THESE FUNDS INCLUDE CORPORATE BONDS, COMMERCIAL PAPER, JUNK
+                BONDS, FOREIGN AND ALL REMAINING TYPES OF BONDS
+
+                     1.    *YES
+                     5.    *NO
+                     0.     Inap. (no mutual funds or hedge funds: X3819^=1)
+
+
+X3828           What is the total market value of all of the other bond
+                mutual funds and ETFs that you (and your family living
+                here) have?
+                
+                $ AMOUNT:
+                     0.     Inap. (no mutual funds or hedge funds: X3819^=1;
+                            no other bond funds: X3827^=1)
+                *********************************************************
+                    ORIGINALLY ALLOWED VALUES: [1,...,9999999999]
+                
+                    IF < 1, OUT OF RANGE: ILLEGAL VALUE ERROR MESSAGE
+                *********************************************************
+
+
+X3829           Do you have. . .
+                
+                combination funds or ETFs?
+                
+                COMBINATION FUNDS ('BALANCED FUNDS') HOLD BOTH STOCK
+                AND BONDS.
+
+                     1.    *YES
+                     5.    *NO
+                     0.     Inap. (no mutual funds or hedge funds: X3819^=1)
+
+
+X3830           What is the total market value of all of the combination
+                funds and ETFs that you (and your family living here) have?
+                
+                $ AMOUNT:
+                     0.     Inap. (no mutual funds or hedge funds: X3819^=1;
+                            no combination mutual funds: X3829^=1)
+                *********************************************************
+                    ORIGINALLY ALLOWED VALUES: [1,...,9999999999]
+                
+                    IF < 1, OUT OF RANGE: ILLEGAL VALUE ERROR MESSAGE
+                *********************************************************
+
+
+X7785           Do you have. . .
+                
+                any other mutual funds, ETFs, hedge funds, or REITs?
+
+                REITs ("reetz")  ARE REAL ESTATE INVESTMENT
+                TRUSTS.
+                ETFs ARE EXCHANGE TRADED FUNDS
+
+                     1.    *YES
+                     5.    *NO
+                     0.     Inap. (no mutual funds or hedge funds:
+                            X3819^=1)
+
+
+####NOTE: 'LUMP SUM DISTRIBUTION OR SETTLEMENT' CHANGED TO 'PAYOUT OR SETTLEMENT'
+
+X6575           Did you (or your family living here) purchase these
+                annuities using or rolling over a payout or settlement
+                from a past job pension?
+
+                     1.    *YES
+                     5.    *NO
+                     0.     Inap. (no annuities: X6815=5)
+
+####NOTE: CODE FRAME CHANGED
+
+X4009           Did I record these loans earlier in the interview?
+
+                     1.    *YES
+                     5.    *NO
+                     0.     Inap. (no life insurance: X4001^=1; no cash value
+                            insurance: X4004^=1; not borrowing on policy:
+                            X4007^=1; cash value=0 and not borrowing
+                            against: X4006=-1 and X4007^=1)
+
+
+####NOTE: 'LUMP SUM DISTRIBUTION OR SETTLEMENT OR ROLLOVER' CHANGED TO 'LUMP SUM PAYOUT 
+####       TO KEEP OR ROLLOVER'
+
+X11018 X11019 X11020 X11021 (#1a) 
+X11118 X11119 X11120 X11121 (#1b) 
+X11318 X11319 X11320 X11321 (#2a) 
+X11418 X11419 X11420 X11421 (#2b) 
+
+                If (you/he/she/he or she) left this job now, what would
+                (you/your husband/your wife/your partner/your spouse)
+                be eligible to receive from this plan-a lump sum payout to keep
+                or roll over, would (you/he/she/he or she) receive regular
+                payments now or later, would (you/he/she/he or she) get
+                something else, or would (you/he/she/he or she) not be eligible
+                to get anything?
+      
+
+####NOTE: SSI NOW BEING CAPTURED HERE. ALSO GATHERING INFO ON BENEFITS FROM OTHER PERSON IN THE HH
+####      NOT JUST R/SP
+
+X5301           IN PERSON VERSION:
+                (SHOW CARD 16) 
+                Are you (or your {husband/wife/partner/spouse})
+                currently receiving Social Security benefit payments?
+                
+                TELEPHONE VERSION:
+                Are you (or your {husband/wife/partner/spouse})
+                currently receiving Social Security benefit payments?
+                
+                INCLUDE RAILROAD RETIREMENT AND SUPPLEMENTAL
+                SECURITY INCOME [SSI] AS SOCIAL SECURITY
+
+                     1.    *YES
+                     5.    *NO
+
+-----------------------------------------------------------------------------
+#1 refers to Social Security benefits of head
+#2 refers to Social Security benefits of spouse/partner
+#3 refers to Social Security benefits of other persons in the household
+-----------------------------------------------------------------------------
+
+####NOTE: SSI/COMBO CODES ADDED (7,8)
+
+X5304(#1)       Are the payments (you {personally} receive/your
+X5309(#2)       [husband/wife/partner/spouse] receives) for retirement,
+                disability, survivors benefits or Supplemental Security
+                Income [SSI]?
+                
+                IF PAYMENT FOR A DECEASED SPOUSE, CODE AS SURVIVORS
+
+                     1.    *Retirement
+                     2.    *Disability
+                     3.    *Survivors
+                     6.     Dependent's benefit
+                     7.    *Supplemental Security Income (SSI)
+                     8.    *Combination of SSI and another benefit
+                     0.     Inap. (not receiving Social Security benefits:
+                            X5301^=1; /no spouse/partner; not receiving
+                            Social Security: X5303^=1/X5308^=1)
+
+
+-----------------------------------------------------------------------------
+#1 refers to first settlement
+#2 refers to second settlement
+#3 refers to third settlement
+#4 refers to fourth settlement
+#5 refers to all remaining settlements
+-----------------------------------------------------------------------------
+
+
+
+####NOTE: IF NEEDED NOTE ADDED
+
+X6464(#1)       How much in total did (you/your
+X6469(#2)       husband/your wife/your partner/your spouse)
+X6474(#3)       withdraw in 2015?
+X6479(#4)
+                IF NEEDED: THE AMOUNT REPORTED HERE SHOULD BE THE GROSS
+                WITHDRAWAL AMOUNT, NOT THE AFTER-TAX WITHDRAWAL AMOUNT.
+                
+                $ AMOUNT:
+
+
+####NOTE: QUESTION TEXT CHANGED AND ADDITIONAL INSTRUCTIONS ADDED
+
+X5501           Have you (or your {husband/wife/partner/spouse}) ever
+                received a payout or rollover from a pension or retirement
+                plan from a previous job?  Such payouts and rollovers are
+                generally associated with a job change.
+                
+                IF YES: Do not include severance pay, worker's compensation,
+                or other pension or retirement account payments you told us
+                about earlier.
+
+                If asked: A ROLLOVER IS THE TRANSFER OF FUNDS FROM ONE
+                PENSION OR RETIREMENT PLAN TO ANOTHER PENSION OR
+                RETIREMENT PLAN, KEOGH OR IRA.
+
+
+####NOTE: 'SETTLEMENT' CHANGED TO PAYOUT OR ROLLOVER IN NEXT SEVERAL QUESTIONS
+
+X5503(#1)       Who received (this/the first) payout or rollover, you or your
+X5506(#2)       (husband/wife/partner/spouse)?
+X5509(#3)
+X5512(#4)            1.     Head (Originally *Respondent)
+                     2.    *Spouse/partner
+                     0.     Inap. (no settlements: X5501^=1; no settlements:
+                            X5502<1/less than 2 settlements: X5502<2/
+                            less than 3 settlements: X5502<3/less than
+                            4 settlements: X5502<4)
+
+
+X5504(#1)       What was the amount of (this/the first) payout or rollover?
+X5507(#2)       
+X5510(#3)       $ AMOUNT:
+X5513(#4)            0.     Inap. (no settlements: X5501^=1; no settlements:
+                            X5502<1/less than 2 settlements: X5502<2/
+                            less than 3 settlements: X5502<3/less than
+                            4 settlements: X5502<4)
+                *********************************************************
+                    ORIGINALLY ALLOWED VALUES: [1,...,999999999]
+                
+                    IF < 1 OUT OF RANGE: ILLEGAL VALUE ERROR MESSAGE
+                *********************************************************
+
+
+                In what year was (this/the first) payout or rollover received?
+
+X5505(#1)       YEAR:
+X5508(#2)            0.     Inap. (no settlements: X5501^=1; no settlements:
+X5511(#3)                   X5502<1/less than 2 settlements: X5502<2/
+X5514(#4)                   less than 3 settlements: X5502<3/less than
+                            4 settlements: X5502<4)
+                *********************************************************
+                    ORIGINALLY ALLOWED VALUES: [X8095-100,...,X8095]
+                
+                    IF OUT OF RANGE: ILLEGAL VALUE ERROR MESSAGE
+                *********************************************************
+                    FOR THE PUBLIC DATA SET, TOP-CODED AT 2016
+                *********************************************************
+
+X5470(#5)       Whose payout or rollover (is this/are these) -- yours, or your
+                (husband's/wife's/partner's/spouse's)(, or both)?
+
+                     1.    *RESPONDENT
+                     2.    *SPOUSE/PARTNER
+                     3.    *BOTH
+                     0.     Inap. (no settlements: X5501^=1; less than 5
+                            settlements: X5502<5; no spouse/partner) 
+
+
+####NOTE: IF NEEDED NOTE ADDED
+
+X6965(#1)       How much in total did (you/your husband/
+X6971(#2)       your wife/your partner/your spouse) withdraw in
+X6977(#3)       2015?
+X6983(#4)
+                IF NEEDED: THE AMOUNT REPORTED HERE SHOULD BE THE GROSS
+                WITHDRAWAL AMOUNT, NOT THE AFTER-TAX WITHDRAWAL AMOUNT.
+                
+                $ AMOUNT:
+                    -1.     Nothing
+                     0.     Inap. (no future pensions: X5601^=1; no future
+                            benefits: X5602<1/ less than 2 future benefits:
+                            X5602<2/less than 3 benefits X5602<3/less than 4
+                            benefits: X5602<4; not an account-type or mixture
+                            plan: X5603=1/X5611=1/X5619=1/X5627=1)
+                *********************************************************
+                    ORIGINALLY ALLOWED VALUES: [0,...,99999999]
+                
+                    IF < 0 OUT OF RANGE: ILLEGAL VALUE ERROR MESSAGE
+                *********************************************************
+
+
+####NOTE: NEGATIVE VALUE NOW ACCEPTED HERE
+
+X5702           In total, what was your (family's) annual income from
+                wages and salaries in 2015, before deductions for taxes and
+                anything else?
+
+                WE WANT TOTAL INCOME FOR THE YEAR, NOT MONTHLY INCOME.
+
+                INCLUDE OVERTIME, BONUSES, AND TIPS.
+
+                IRS FORM 1040 LINE NUMBER: 7
+                
+                ANNUAL $ AMOUNT IN 2015:
+                     0.     Inap. (no wage income: X5701^=1)
+                *********************************************************
+                    ORIGINALLY ALLOWED VALUES: [-999999999,...,999999999]
+                 
+                    IF <1 OUT OF RANGE: ILLEGAL VALUE ERROR MESSAGE
+                *********************************************************
+
+
+####NOTE: 'ONE' ADDED TO BOTH QUESTION VERSIONS
+
+X6364           IN PERSON VERSION:
+                (SHOW CARD 21) 
+                This is a list of reasons why some people don't have health
+                insurance.  Which one reason best describes why (you are not
+                covered/not everyone living here is covered)?
+                
+                READ RESPONSES IF NECESSARY.
+                  
+                TELEPHONE VERSION:
+                Which one of the following reasons best describes why (you
+                don't have/not everyone living here has) health insurance:
+
+
+
+#######################################################################################
+#2. NEW VARIABLE TEXT
+#######################################################################################
+
+
+-----------------------------------------------------------------------------
+#1 refers to IRA/Keogh account of R
+#2 refers to IRA/Keogh account of spouse/partner
+#3 refers to IRA/Keogh account of other PEU member
+-----------------------------------------------------------------------------
+
+X6791(#1)       Did (you/your {husband/wife/partner}/your other family members)
+X6793(#2)       make any contributions to (this/these) account(s) in 2015?
+X6795(#3)       
+                PLEASE DO NOT INCLUDE ROLLOVERS OR CASHOUTS FROM OTHER
+                PENSION PLANS OR IRAS AS NEW IRA CONTRIBUTIONS.  WE WILL
+                COLLECT THIS INFORMATION LATER IN THE SURVEY.
+
+                     1.    *YES
+                     5.    *NO
+                     0.     Inap. (no IRA/Keogh accounts: X3601^=1; no IRA/Keoghs:
+                            X3601^=1/no spouse or partner in PEU: X107^=1/no other
+                            PEU members: (X113, X119, X125, X131, X137, X207, X213,
+                            X219, X225, X231)^=1; person has no account: X3602^=1/
+                            X3612^=1/X3622^=1)
+
+X6792(#1)       How much in total did (you/he/she/they) contribute in 2015?
+X6794(#2)
+X6796(#3)            0.     Inap. (no IRA/Keogh accounts: X3601^=1; no IRA/Keoghs:
+                            X3601^=1/no spouse or partner in PEU: X107^=1/no other
+                            PEU members: (X113, X119, X125, X131, X137, X207, X213,
+                            X219, X225, X231)^=1; person has no account: X3602^=1/
+                            X3612^=1/X3622^=1; no contributions: X6791^=1/X6793^=1/
+                            X6795^=1)
+
+-----------------------------------------------------------------------------
+#1 refers to Social Security benefits of head
+#2 refers to Social Security benefits of spouse/partner
+#3 refers to Social Security benefits of other persons in the household
+-----------------------------------------------------------------------------
+
+X7873(#3)       IN PERSON VERSION:
+                (SHOW CARD 10) 
+                Are other members of your family living here currently
+                receiving Social Security benefit payments?
+                     
+                TELEPHONE VERSION:
+                Are other members of your family living here currently
+                receiving Social Security benefit payments?
+                     
+                INCLUDE RAILROAD RETIREMENT AND SUPPLEMENTAL
+                SECURITY INCOME (SSI) AS SOCIAL SECURITY
+
+                     1.    *YES
+                     5.    *NO
+                     0.     Inap. (PEU contains only 1 person; PEU contains 2 people 
+                            and spouse present; X7001 =1; X7020=2 and X7001 =2)
+
+
+X7874 X7875 X7876 X7877 X7878(#3)
+
+                Thinking about other members of your household, are the
+                payments other members of the PEU receive for retirement,
+                disability, survivors benefits or SSI?
+     
+                CODE ALL THAT APPLY
+     
+                IF PAYMENT FOR A DECEASED SPOUSE, CODE AS SURVIVORS
+
+                  X7874  *Retirement
+                  X7875  *Disability
+                  X7876  *Survivors
+                  X7877  Dependents benefit
+                  X7878  Supplemental Security Income
+
+                     1.    *YES
+                     5.    *NO
+                     0.     Inap. (not receiving Social Security benefits:
+                            X5301^=1; PEU contains only 1 person: X7001=1; PEU contains 
+                            2 people and spouse present: X7020=2 and X7001 =2; Other 
+                            household members not receiving Social Security: X7873^=1)
+
+
+X7592           Have you (or anyone in your family living here)  written a paper check
+                to make a payment in the past 12 months?
+
+                     1.    *YES
+                     5.    *NO
+
+
+X7593           Online banking is a method of accessing a financial account using the 
+                Internet to check your account balance, view recent transactions, transfer 
+                money, or pay bills. Have you (or anyone in your family living here) used
+                online banking in the past 12 months? 
+                
+                INCLUDE ACCESSING ACCOUNTS THROUGH MOBILE DEVICES SUCH AS CELL PHONES AND 
+                TABLETS.
+
+                     1.    *YES
+                     5.    *NO
+
+X7594           A reloadable prepaid debit card is not linked to a bank or credit union 
+                account, but you or someone else, like a relative, or a 
+                government agency, can add money onto this card.  You can use it 
+                to make purchases and pay bills where credit cards are accepted. 
+                
+                Do you (or anyone in your family living here) have any prepaid debit cards?
+
+                IF ASKED: INCLUDE PAYROLL CARDS FOR WAGES OR SALARY
+                
+                IF ASKED: DO NOT INCLUDE DIRECT EXPRESS CARDS, ELECTRONIC BENEFIT TRANSFER 
+                CARDS (EBT), OTHER GOVERNMENT BENEFIT CARDS, PHONE CARDS, GIFT CARDS FOR A 
+                PARTICULAR STORE OR SERVICE OR CARDS THAT YOU CANNOT ADD MORE MONEY ONTO.
+
+                     1.    *YES
+                     5.    *NO
+
+X7595           Do you (or your family living here) ever go into a local branch of the 
+                institution with your main checking account to do business in person?
+
+                     1.    *Yes
+                     2.    *YES, BUT JUST TO USE THE ATM
+                     3.    *NO, NOT SINCE THE ACCOUNT WAS OPENED
+                     5.    *No, never
+                     0.     Inap. (no checking account:  X3501=5)
+
+X7596           You previously mentioned that you (or your family living here) have one 
+                or more reloadable prepaid debit cards or prepaid government benefit
+                cards. How much in total is in all your (family's) prepaid card accounts ? 
+                
+                PROBE: What was the average over the last month?
+
+                    -1.     Nothing
+                     0.     Inap. (no prepaid accounts: X7594^=1 and X7648^=1)
+                *********************************************************
+                     ORIGINALLY ALLOWED VALUES: [1,...,999999999]
+                                
+                     IF < 1, OUT OF RANGE: ILLEGAL VALUE ERROR MESSAGE
+                *********************************************************
+
+X7597           Do you (or your family living here) ever go into a local branch of the 
+                institution with your largest savings/moneymarket account to do business in 
+                person?
+
+                     1.    *Yes
+                     2.    *YES, BUT JUST TO USE THE ATM
+                     3.    *NO, NOT SINCE THE ACCOUNT WAS OPENED
+                     5.    *No, never
+                     0.     Inap. (no savings account:  X3727=5)
+
+
+
+-----------------------------------------------------------------------------
+#1 refers to first education loan
+#2 refers to second education loan
+#3 refers to third education
+#4 refers to fourth education
+#5 refers to fifth education
+#6 refers to sixth education
+#7 refers to all remaining education loans
+-----------------------------------------------------------------------------
+
+
+X7978(#1)       For whose education was (this/the largest/
+X7883(#2)       the next largest) loan taken out?
+X7888(#3)
+X7893(#4)            1.    *Respondent
+X7898(#5)            2.    *Spouse/Partner
+X7993(#6)            3.    *Child
+                     4.    *Grandchild
+                     5.    *Other relative
+                    -7.     Other
+                     0.     Inap. (no education loans: X7801^=1/less than 2 loans:
+                            X7802<2/less than 3 loans:X7802<3/less than 4 loans:
+                            X7802<4/less than 5 loans: X7802<5/less than 6 loans:
+                            X7802<6)
+
+X7879(#1)       Is this loan a federal student loan such as Stafford, Direct, PLUS, or Perkins?
+X7884(#2)
+X7889(#3)            1.    *YES
+X7894(#4)            5.    *NO
+X7899(#5)            0.     Inap. (no education loans: X7801^=1/less than 2 loans:
+X7994(#6)                   X7802<2/less than 3 loans:X7802<3/less than 4 loans:
+                            X7802<4/less than 5 loans: X7802<5/less than 6 loans:
+                            X7802<6)
+
+
+                In what year (or at what age) did (you/he/she/he or she) last attend
+                the educational program this loan was used to pay for?
+
+X7880(#1)       YEAR:
+X7885(#2)           -1.     Still enrolled
+X7890(#3)            0.     Inap. (no education loans: X7801^=1/less than 2 loans:
+X7895(#4)                   X7802<2/less than 3 loans:X7802<3/less than 4 loans:
+X7900(#5)                   X7802<4/less than 5 loans: X7802<5/less than 6 loans:
+X7995(#6)                   X7802<6; R/Sp not owner of loan: X7978/X7883/X7888/
+                            X7893/X7898/X7993 ^= (1,2))
+                *********************************************************
+                     ORIGINALLY ALLOWED VALUES: [1900,...,X8095]
+                                 
+                     IF OUT OF RANGE: ILLEGAL VALUE ERROR MESSAGE
+                *********************************************************
+
+
+X8030(#1)       YEARS AGO:
+X8032(#2)           -1.     Still enrolled
+X8034(#3)            0.     Inap. (no education loans: X7801^=1/less than 2 loans:
+X8036(#4)                   X7802<2/less than 3 loans:X7802<3/less than 4 loans:
+X8038(#5)                   X7802<4/less than 5 loans: X7802<5/less than 6 loans:
+X8040(#6)                   X7802<6)
+                *********************************************************
+                     ORIGINALLY ALLOWED VALUES: [0,...,90]
+
+                      IF OUT OF RANGE: ILLEGAL VALUE ERROR MESSAGE
+                *********************************************************
+
+
+X8031(#1)       AGE:
+X8033(#2)           -1.     Still enrolled
+X8035(#3)            0.     Inap. (no education loans: X7801^=1/less than 2 loans:
+X8037(#4)                   X7802<2/less than 3 loans:X7802<3/less than 4 loans:
+X8039(#5)                   X7802<4/less than 5 loans: X7802<5/less than 6 loans:
+X8041(#6)                   X7802<6; loan not for R or SP: X7978^=(1,2)/
+                            X7883^=(1,2)/X7888^=(1,2)/X7893^=(1,2)/
+                            X7898^=(1,2)/X7993^=(1,2))
+                *********************************************************
+                     ORIGINALLY ALLOWED VALUES: [13,...,99]
+                                
+                     IF OUT OF RANGE: ILLEGAL VALUE ERROR MESSAGE
+                
+                     IF >X8022/X104: GREATER THAN CURRENT AGE ERROR MESSAGE
+                *********************************************************
+
+X7881(#1)       Did (you/he/she/he or she) complete the educational program
+X7886(#2)       this loan was used to pay for?
+X7891(#3)
+X7896(#4)            1.    *YES
+X7901(#5)            5.    *NO
+X7996(#6)            0.     Inap. (no education loans: X7801^=1/less than 2 loans:
+                            X7802<2/less than 3 loans:X7802<3/less than 4 loans:
+                            X7802<4/less than 5 loans: X7802<5/less than 6 loans:
+                            X7802<6; still enrolled: X7880=-1/ X7885=-1/ X7890=-1/
+                            X7895=-1/X7900=-1/ X7995=- 1)
+
+
+X9300(#1)       What is the reason that (you are/he is/she is/he or she is) not 
+X9301(#2)       making payments on (your/his/her/his or her) loan? (Are you/Is he/
+X9302(#3)       Is she/Are they) in a post-graduation grace period, in a job or public
+X9303(#4)       service related loan forgiveness program, or simply unable to afford
+X9304(#5)       the loan payment?
+X9305(#6)
+                     1.    *LOAN FORBEARANCE OR POST-GRADUATION GRACE PERIOD
+                     2.    *JOB OR PUBLIC SERVICE LOAN FORGIVENESS PROGRAM
+                     3.    *UNABLE TO AFFORD LOAN PAYMENT
+                    -7.     OTHER
+                     0.     Inap. (no education loans: X7801^=1/less than 2 loans:
+                            X7802<2/less than 3 loans:X7802<3/less than 4 loans:
+                            X7802<4/less than 5 loans: X7802<5/less than 6 loans:
+                            X7802<6; still enrolled: X7880=-1/X7885=-1/ X7890=-1/
+                            X7895=-1/X7900=-1/X7995=- 1; making payments on
+                            loan: X7806/X7829/X7852/X7906/X7929/X7952=1;)
+
+X9306(#1)       Is the payment amount (on this loan) (you/he/she/he or she) owe each month
+X9307(#2)       determined by (your/his/her/his or her) income, for example an Income-Based
+X9308(#3)       Repayment Plan, Pay as you Earn Plan, or Income-Contingent Repayment Plan?
+X9309(#4)
+X9310(#5)            1.    *YES
+X9311(#6)            5.    *NO
+                     0.     Inap. (no education loans: X7801^=1/less than 2
+                            loans; X7802<2/less than 3 loans:
+                            X7802<3/less than 4 loans: X7802<4/
+                            less than 5 loans: X7802<5/less than 6
+                            loans: X7802<6; not paying on loan now:
+                            X7806^=1/X7829^=1/X7852^=1/X7906^=1/
+                            X7929^=1/X7952^=1; still enrolled: X7880=-1/
+                            X7885=-1/ X7890=-1/X7895=-1/X7900=-1/
+                            X7995=- 1)
+                *********************************************************
+                EDIT CHECK (#1):
+                If R has a zero dollar payment on their education loan 
+                and isn't in an income based repayment program:
+                IF (X7815=-1 & X9306=5/X7838=-1 & X9307=5/X7861=-1 & 
+                X9308=5/X7915=-1 & X9309=5/X7938=-1 & X9310=5/X7961=-1 
+                & X9311=5)
+                                
+                CAPI text displayed:
+                ATTENTION:
+                POSSIBLE R PAYMENT ERROR. R REPORTED THAT PAYMENTS ARE 
+                BEING MADE ON THE LOAN BUT THAT THE PAYMENT AMOUNT IS 
+                ZERO DOLLARS AND THAT THEY ARE NOT ENROLLED IN AN INCOME 
+                BASED REPAYMENT PROGRAM. PLEASE EXPLAIN HOW THEY CONSIDER 
+                THEMSELVES TO BE MAKING PAYMENTS ON THE LOAN WHEN THEY 
+                ARE NOT IN AN INCOME BASED REPAYMENT PROGRAM THAT ALLOWS 
+                A ZERO DOLLAR PAYMENT.
+                                
+                COMMENT LATER
+                COMMENT NOW
+                *********************************************************
+
+
+X7421(#1)       Is the amount owed on this loan being completely forgiven or partially 
+X7423(#2)       forgiven?
+X7425(#3)
+X7427(#4)            1.    *COMPLETELY FORGIVEN
+X7429(#5)            2.    *PATIALLY FORGIVEN
+X7431(#6)           -7.     Other
+                     0.     Inap. (no education loans: X7801^=1/less than 2
+                            loans; X7802<2/less than 3 loans:
+                            X7802<3/less than 4 loans: X7802<4/
+                            less than 5 loans: X7802<5/less than
+                            6 loans: X7802<6; not in loan forgiveness
+                            program: X9300^=2/X9301=^2/
+                            X9302^=2/X9303^=2/X9304^=2/9305^=2;
+                            still enrolled: X7880=-1/X7885=-1/ X7890=-1/
+                            X7895=-1/X7900=-1/X7995=- 1; making
+                            payments on loan: X7806/X7829/X7852/
+                            X7906/X7929/X7952=1;)
+
+
+X7422(#1)       (Are you/Is he/Is she/Is he or she) in an income based repayment program, 
+X7424(#2)       receiving a hardship deferral on the loan payment, or 
+X7426(#3)       something else?
+X7428(#4)
+X7430(#5)            1.    *INCOME BASED REPAYMENT
+X7432(#6)            2.    *HARDSHIP DEFERRAL ON LOAN PAYMENT
+                     3.     Other not paying
+                    -7.     Other
+                     0.     Inap. (no education loans: X7801^=1/less than 2
+                            loans; X7802<2/less than 3 loans:
+                            X7802<3/less than 4 loans: X7802<4/
+                            less than 5 loans: X7802<5/less than 6
+                            loans: X7802<6; paying on loan now:
+                            X7806^=5/X7829^=5/X7852^=5/X7906^=5/X7929^=5/X7952^=5;
+                            post graduation grace period: X9300=1/X9301=1/X9302=1/
+                            X9303=1/X9304=1/X9305=1; loan forgiveness program:
+                            X9300=2/X9301=2/X9302=2/X9303=2/X9304=2/X9305=2;
+                            still enrolled: X7880=-1/X7885=-1/ X7890=-1/X7895=-1/X7900=-1/
+                            X7995=- 1; making payments on loan: X7806/X7829/X7852/X7906/
+                            X7929/X7952=1;)
+
+
+                The following questions ask about applications for credit 
+                (including pre-approved offers) that you have made over the 
+                past twelve months. Answer 'yes' if you (or your {husband/wife/
+                partner}) applied for a particular type of credit whether or 
+                not you actually received the credit you applied for.
+                
+                During the past twelve months, did you (or your {husband/wife/
+                partner}) do any of the following?
+
+X433            Apply for a credit card or respond to a pre-approved credit card offer?
+
+                     1.    *YES
+                     5.    *NO
+
+
+X434            Request an increase in the credit limit of a credit card?
+
+                     1.    *YES
+                     5.    *NO
+
+
+X435            Apply for a mortgage or home-based loan?
+
+                     1.    *YES
+                     5.    *NO
+
+
+X436            Request to refinance a mortgage?
+
+                     1.    *YES
+                     5.    *NO
+
+
+X437            Apply for an auto loan?
+
+                     1.    *YES
+                     5.    *NO
+
+
+X438            Apply for a student loan?
+
+                     1.    *YES
+                     5.    *NO
+
+
+X439            Apply for any other consumer credit?
+
+                     1.    *YES
+                     5.    *NO
+
+
+X440            Request an increase in the limit of an existing loan (other than a credit 
+                card)?
+
+                     1.    *YES
+                     5.    *NO
+
+
+X441            You just indicated that you did not apply for any credit over the past 
+                twelve months. Was that because you had no need for additional credit, 
+                you thought interest rates were too high, you did not think you would 
+                get approved, or something else?
+
+                     1.    *NO NEED FOR ADDITIONAL CREDIT; satisfied with current financial
+                            situation
+                     2.    *INTEREST RATES WERE TOO HIGH
+                     3.    *DID NOT THINK I WOULD GET APPROVED
+                     4.    *DID NOT KNOW HOW TO APPLY OR NOT WORTH THE EFFORT;
+                            too time consuming
+                     5.     Don't want additional credit; prefers to avoid using credit
+                    -7.    *Other
+                     0.     Inap. (any credit application in last twelve months: X433^=5 or
+                            X434^=5 or X435^=5 or X436^=5 or X437^=5 or
+                            X438^=5 or X439^=5 or X440^=5)
+
+X7775           If tomorrow you experienced a financial emergency that left 
+                you unable to pay all of your bills, how would you deal 
+                with it? Would you borrow money, would you spend out of 
+                savings or investments, would you postpone paying bills, 
+                or would you do something else?
+
+                     1.    *BORROW MONEY
+                     2.    *SPEND OUT OF SAVINGS/INVESTMENTS
+                     3.    *POSTPONE PAYMENTS
+                     4.    *CUT BACK
+                    -7.    *OTHER
+                     0.     Inap. (spending exceeded income: X7510=1)
+
+
+X7776           (Show Card 12)
+X7777           Please tell me where you would borrow from first. Is it...?
+                 
+                Anywhere else?
+
+                (CODE ALL THAT APPLY)
+
+                     1.    *Family
+                     2.    *Friends
+                     3.    *Credit Card
+                     4.    *Car title lender
+                     5.    *Pawn Shop
+                     6.    *Title Loan
+                     7.    *Payday Lender
+                     8.    *Church
+                     9.    *Social Service Institution
+                    10.     Personal Loan, n.e.c.
+                    11.     Financial Institution
+                    -7.    *OTHER
+                     0.     Inap. (spending exceeded income: X7510=1;would not borrow money
+                            to make up difference: X7775^=1)
+
+
+X7778           (Show Card 13)
+X7779           Please tell me what is the first account you would you spend from, or 
+                what is the first asset you would you sell. Is it your... 
+                
+                What else?
+
+                DURABLE GOODS INCLUDE FURNITURE AND APPLIANCES
+                OTHER MISCELLANEOUS VALUABLES INCLUDES ART,
+                COLLECTIONS, JEWELRY, AND SILVERWARE
+
+                (CODE ALL THAT APPLY)
+
+                     1.    *Savings account
+                     2.    *Stocks, bonds, CDs, or other financial assets
+                     3.    *Home Equity loan or line of credit
+                     4.    *Pension or Retirement Accounts
+                     5.    *Automobile
+                     6.    *Real Estate
+                     7.    *Durable goods
+                     8.    *Other miscellaneous valuables
+                     9.     Business(es)
+                    -7.    *OTHER
+                     0.     Inap. (spending exceeded income: X7510=1; would not spend out of
+                            savings/investments to make up difference: X7775^=2)
+
+
+X7780           (Show Card 14)
+X7781           Please tell me what is the first payment you would postpone or renegotiate.
+                Is it payment on your...
+                
+                What else?
+
+                (CODE ALL THAT APPLY)
+
+                     1.    *Credit cards
+                     2.    *Store charge cards
+                     3.    *Payments due for services or goods purchased
+                     4.    *Utilities
+                     5.    *Insurance
+                     6.    *Rent
+                     7.    *Mortgage
+                     8.    *Auto loans
+                     9.    *Student loans
+                    10.    *Other miscellaneous loans
+                    11.    *Installment or layaway loans
+                    -7.    *OTHER
+                     0.     Inap. (spending exceeded income: X7510=1; would not postpone
+                            payments to make up difference: X7775^=3)
+
+
+X7782           (Show Card 15)
+X7783           Please tell me what is the first expense you would cut back on. Is it 
+                spending on...
+                
+                What else?
+
+                ENTERTAINMENT INCLUDES ACTIVITIES IN AND OUT OF THE HOME
+                NON-DURABLE GOODS INCLUDE CLOTHING AND HOUSEWARES
+                PERSONAL CARE INCLUDES HAIR CARE AND GYM MEMBERSHIPS
+                HEALTH CARE INCLUDE DOCTOR VISITS AND MEDICINE
+                PERSONAL OR HOME SERVICES INCLUDE HOUSE CLEANING
+                AND LAWNCARE
+
+                (CODE ALL THAT APPLY)
+
+                     1.    *Eating or drinking out
+                     2.    *Food or beverages at home
+                     3.    *Entertainment
+                     4.    *Travel
+                     5.    *Non-durable goods
+                     6.    *Personal care
+                     7.    *Health care
+                     8.    *Personal or home services
+                    -7.    *OTHER
+                     0.     Inap. (spending exceeded income: X7510=1; would not cut back on
+                            expenses to make up difference: X7775^=4)
+
+X7556           (SHOW CARD 1)
+                Some people are very knowledgeable about personal finances, while others 
+                are less knowledgeable about personal finances. 
+                
+                On a scale from zero to ten, where zero is not at all knowledgeable about 
+                personal finance and ten is very knowledgeable about personal finance, what 
+                number would you (and your {husband/wife/partner}) be on the scale?
+
+                    -1.    *NOT AT ALL KNOWLEDGEABLE ABOUT PERSONAL FINANCE
+                     1.
+                     2.
+                     3.
+                     4.
+                     5.
+                     6.
+                     7.
+                     8.
+                     9.
+                    10.    *VERY KNOWLEDGEABLE ABOUT PERSONAL FINANCE
+
+                  NOTE: CARD 1 contains the following information: The numbers 0 through 
+                  10 in a horizontal row bounded by dark lines.  Below 0 is printed "Not 
+                  at all knowledgeable about personal finance" and below 10 is printed 
+                  "Very knowledgeable about personal finance."  Nothing is printed below 
+                  1 through 9.
+
+X7557           (SHOW CARD 2)
+                Some people are fully prepared to take financial risks when they save or make 
+                investments, while others try to avoid taking financial risks.
+                
+                On a scale from zero to ten, where zero is not at all willing to take risks 
+                and ten is very willing to take risks, what number would you (and your 
+                {husband/wife/partner}) be on the scale?
+
+                    -1.    *NOT AT ALL WILLING TO TAKE FINANCIAL RISKS
+                     1.
+                     2.
+                     3.
+                     4.
+                     5.
+                     6.
+                     7.
+                     8.
+                     9.
+                    10.    *VERY WILLING TO TAKE RISKS
+
+                   NOTE: CARD 2 contains the following information:
+                   The numbers 0 through 10 in a horizontal row bounded by dark
+                   lines.  Below 0 is printed "Not at all willing to take risks"
+                   and below 10 is printed "Very willing to take risks."  
+                   Nothing is printed below 1 through 9.
+
+
+                The next three questions are about your opinion on money and investments. 
+
+X7558           Do you think that the following statement is true or false: buying
+                a single company's stock usually provides a safer return than a 
+                stock mutual fund?
+
+                     1.    *TRUE
+                     5.    *FALSE
+                    -2.     Don't know
+                    -3.     Refused
+
+
+X7559           Suppose you had $100 in a savings account and the interest rate was 2% per 
+                year. After 5 years, how much do you think you would have in the account if 
+                you left the money to grow: more than $102, exactly $102, or less than $102?
+
+                     1.    *MORE THAN $102
+                     3.    *EXACTLY $102
+                     5.    *LESS THAN $102
+                    -2.     Don't know
+                    -3.     Refused
+
+
+X7560           Imagine that the interest rate on your savings account was 1% per year and 
+                inflation was 2% per year. After 1 year, would you be able to buy more than 
+                today, exactly the same as today, or less than today with the money in this 
+                account?
+
+                     1.    *MORE THAN TODAY
+                     3.    *EXACTLY THE SAME AS TODAY
+                     5.    *LESS THAN TODAY
+                    -2.     Don't know
+                    -3.     Refused
+
+
+X3031           Have you (or your [husband/wife/partner]) ever had a
+                foreclosure proceeding brought against a property you
+                have owned?
+
+                     1.    *YES
+                     5.    *NO
+
+
+                When was that?
+                IF MORE THAN ONCE, ASK: When was the most recent time?
+
+X3032           NUMBER OF YEARS AGO:
+                     0.     Inap. (never had foreclosure: X3031^=1)
+                *********************************************************
+                ORIGINALLY ALLOWED VALUES: [0,...,99]
+                                
+                IF OUT OF RANGE: ILLEGAL VALUE ERROR MESSAGE
+                *********************************************************
+
+
+X3033           YEAR:
+                     0.     Inap. (never had foreclosure: X3031^=1)
+                *********************************************************
+                ORIGINALLY ALLOWED VALUES: [X8095-100,...,X8095]
+                                
+                IF OUT OF RANGE: ILLEGAL VALUE ERROR MESSAGE
+                *********************************************************
+
+
+X3034           Did you lose the property as a result?
+
+                     1.    *YES
+                     5.    *NO
+                     0.     Inap. (never had foreclosure: X3031^=1)
+
+
+X3035           Are you still in the foreclosure process?
+
+                     1.    *YES
+                     5.    *NO, RECEIVED A LOAN MODIFICATION
+                     6.    *NO, WAS ABLE TO CATCH UP ON PAYMENTS
+                     8.    *NO, SOLD THE HOME
+                    -7.     Other
+                     0.     Inap. (never had foreclosure: X3031^=1; lost home: X3034=1)
+
+X7561           (SHOW CARD 3) 
+                When making major decisions about borrowing money or
+                obtaining credit, some people search for the very best
+                terms while others don't. 
+                                
+                On a scale from zero to ten, where zero is no
+                searching and ten is a great deal of searching, what number would you 
+                (and your {husband/wife/partner}) be on the scale?
+                                                              
+                IF R SAYS "I DON'T BORROW", SAY: What did you do the last
+                time you borrowed?
+
+                    -1.    *NO SEARCHING
+                     1.
+                     2.
+                     3.
+                     4.
+                     5.
+                     6.
+                     7.
+                     8.
+                     9.
+                    10.    *A GREAT DEAL OF SEARCHING
+
+                NOTE: CARD 3 contains the following information: 
+                The numbers 0 through 10 in a horizontal row bounded 
+                by dark lines.  Below 0 is printed "No shopping" and 
+                below 10 is printed "A great deal of shopping."  
+                Nothing is printed below 1 through 9. 
+
+                Note: X7561 will be mapped back into the five categories 
+                used for X7100, a variable from previous survey years. 
+                For details on this variable, see previous codebooks.
+
+X7562           (SHOW CARD 3) 
+                When making saving and investment decisions, some
+                people search for the very best terms while others don't.
+                                
+                On a scale from zero to ten, where zero is no
+                searching and ten is a great deal of searching, what number would you 
+                (and your {husband/wife/partner}) be on the scale?
+
+                    -1.    *NO SEARCHING
+                     1.
+                     2.
+                     3.
+                     4.
+                     5.
+                     6.
+                     7.
+                     8.
+                     9.
+                    10.    *A GREAT DEAL OF SEARCHING
+
+                NOTE: CARD 3 contains the following information: The numbers 
+                0 through 10 in a horizontal row bounded by dark lines.  Below 
+                0 is printed "No shopping" and below 10 is printed "A great deal 
+                of shopping."  Nothing is printed below 1 through 9.
+
+                Note: X7562 will be mapped back into the five categories used for 
+                X7111 in previous surveys. For details on this variable, see
+                previous codebooks.
+
+
+X7648           Do you (or anyone in your family living here) have a government
+                benefit card such as a Direct Express card, or an Electronic Benefit
+                Transfer (EBT) card for WIC or Food Stamps?
+
+                     1.    *YES
+                     5.    *NO
+
+
+-----------------------------------------------------------------------------
+#1 refers to characteristics of head
+#2 refers to characteristics of spouse/partner
+-----------------------------------------------------------------------------
+
+X5931(#1)       What is the highest level of school completed or the highest
+X6111(#2)       degree you have received?
+                
+                I'd like to ask you some questions about your (husband/wife/
+                partner/spouse)'s background. What is the highest level of
+                school or the highest degree (he/she/he or she) completed?
+                
+                RECORD THE HIGHEST LEVEL OF EDUCATION COMPLETED, NOT THE
+                TIME IT TOOK TO COMPLETE IT.  DO NOT INCLUDE TRADE SCHOOLS
+                AS COLLEGE.
+
+                     1.    *1st, 2nd, 3rd, or 4th grade
+                     2.    *5th or 6th grade
+                     3.    *7th and 8th grade
+                     4.    *9th grade
+                     5.    *10th grade
+                     6.    *11th grade
+                     7.    *12th grade, no diploma
+                     8.    *High school graduate - high school diploma or equivalent
+                     9.    *Some college but no degree
+                    10.    *Associate degree in college - occupation/vocation program
+                    11.    *Associate degree in college - academic program
+                    12.    *Bachelor's degree (for example: BA, AB, BS)
+                    13.    *Master's degree ( for exmaple: MA, MS, MENG, MED, MSW, MBA)
+                    14.    *Professional school degree (for example: MD, DDS, DVM, LLB, JD)
+                    15.    *Doctorate degree (for example: PHD, EDD)
+                    -1.    *Less than 1st grade
+                     0.     Inap. (no spouse/partner)
+
+
+X5932(#1)       People can get a High School diploma in a variety of ways, such as graduating
+X6112(#2)       from High School or by getting a GED or other equivalent. How did (you/he/she/
+                he or she) get (your/his/he/his or her) High School diploma?
+
+                     1.    *GRADUATION FROM HIGH SCHOOL
+                     2.    *GED OR OTHER EQUIVALENCY PROGRAM
+                     0.     Inap. (no spouse/partner; high school diploma not highest
+                            schooling acheieved: X5931/X6111^=8)
+
+
+X5933(#1)       How many years of college credit (have/has)(you/he/she/he or she) completed?
+X6113(#2)
+                     1.    *Less than one year
+                     2.    *The first, or Freshman year
+                     3.    *The second, or Sophomore year
+                     4.    *The third, or Junior year
+                     5.    *Four or more years
+                     0.     Inap. (no spouse/partner; Did not complete some college, no degree:
+                            X5931/X6111^=9)
+
+
+X6032(#1)       What is the highest level of school or the highest degree she
+X6132(#2)       completed?
+                RECORD THE HIGHEST LEVEL OF EDUCATION COMPLETED, NOT THE
+                TIME IT TOOK TO COMPLETE IT.  DO NOT INCLUDE TRADE SCHOOLS
+                AS COLLEGE.
+
+                     1.    *1st, 2nd, 3rd, or 4th grade
+                     2.    *5th or 6th grade
+                     3.    *7th and 8th grade
+                     4.    *9th grade
+                     5.    *10th grade
+                     6.    *11th grade
+                     7.    *12th grade, no diploma
+                     8.    *High school graduate - high school diploma or equivalent
+                     9.    *Some college but no degree
+                    10.    *Associate degree in college - occupation/vocation program
+                    11.    *Associate degree in college - academic program
+                    12.    *Bachelor's degree (for example: BA, AB, BS)
+                    13.    *Master's degree ( for exmaple: MA, MS, MENG, MED, MSW, MBA)
+                    14.    *Professional school degree (for example: MD, DDS, DVM, LLB, JD)
+                    15.    *Doctorate degree (for example: PHD, EDD)
+                    -1.    *Less than 1st grade
+                     0.     Inap. (no spouse/partner;)
+
+
+X6033(#1)       What is the highest level of school or the highest degree he
+X6133(#2)       completed?
+                RECORD THE HIGHEST LEVEL OF EDUCATION COMPLETED, NOT THE
+                TIME IT TOOK TO COMPLETE IT.  DO NOT INCLUDE TRADE SCHOOLS
+                AS COLLEGE.
+
+                     1.    *1st, 2nd, 3rd, or 4th grade
+                     2.    *5th or 6th grade
+                     3.    *7th and 8th grade
+                     4.    *9th grade
+                     5.    *10th grade
+                     6.    *11th grade
+                     7.    *12th grade, no diploma
+                     8.    *High school graduate - high school diploma or equivalent
+                     9.    *Some college but no degree
+                    10.    *Associate degree in college - occupation/vocation program
+                    11.    *Associate degree in college - academic program
+                    12.    *Bachelor's degree (for example: BA, AB, BS)
+                    13.    *Master's degree ( for exmaple: MA, MS, MENG, MED, MSW, MBA)
+                    14.    *Professional school degree (for example: MD, DDS, DVM, LLB, JD)
+                    15.    *Doctorate degree (for example: PHD, EDD)
+                    -1.    *Less than 1st grade
+                     0.     Inap. (no spouse/partner;)
+
+
+-----------------------------------------------------------------------------
+#1 refers to the first gift/inheritance
+#2 refers to the second gift/inheritance
+#3 refers to the third gift/inheritance
+#4 refers to all remaining gifts/inheritances
+-----------------------------------------------------------------------------
+
+X5827(#1)       What kind of assets were included in that inheritance?
+X5832(#2)       
+X5837(#3)            0.     Inap. (no inheritances: X5801^=1; no inheritances:
+                                   X5802<1/less than 2 inheritances: X5802<2/
+                                   less than 3 inheritances: X5802<3; not received 
+                                   in previous year: X5805/X5810/X5815^=2015)
+
+
+######################################################################################
+NOTE: X7563 is the only new var in the following question, but all the variables 
+are substantially related
+######################################################################################
+
+X7123 X7124 X7563 X6858 X6859 X6912 X7125 X6913 X6914
+
+                What types of deposits are these?
+
+                What types of deposits are these: paychecks, Social Security
+                benefits, or other types of deposits?
+     
+                CODE ALL THAT APPLY: CODE RESPONSES IN THE ORDER THEY ARE
+                GIVEN.
+     
+                X7123: *PAYCHECK; Other income from work (e.g., consulting
+                        fees); reimbursements for work expenses
+                X7124: *SOCIAL SECURITY OR DISABILITY; VA Bisability; Railroad Retirement
+                X7563: *SUPPLEMENTAL SECURITY INCOME (SSI), FOOD STAMPS (SNAP),
+                        WELFARE, OR OTHER GOVERNMENT BENEFITS
+                X6858: *OTHER PENSION OR OTHER RETIREMENT INCOME; IRA/Keogh
+                        withdrawals; annuity income
+                X6859: *INVESTMENT INCOME; royalty or trust income
+                X6912: *TRANSFER TO ONE OF PEU'S ACCOUNTS FROM ANOTHER
+                        PEU ACCOUNT
+                X7125, X6913, X6914: *OTHER
+
+                     1.     Checked (any except X7125/X6913/X6914)
+                     4.     Disability payments; VA disability benefits
+                            (only X7125/X6913/X6914)
+                     5.     Not checked (any)
+                     6.     Supplemental Security Income (SSI) and other types
+                            of welfare (only X7125/X6913/X6914)
+                     8.     Automatic payments on loans made by R (i.e., loans
+                            from which R receives income) (only X7125/X6913/X6914)
+                    10.     Alimony/support; other support from family
+                            members (only X7125/X6913/X6914)
+                    13.     Insurance reimbursement (only X7125/X6913/X6914)
+                    15.     Tax refund (only X7125/X6913/X6914)
+                    16.     Government payments (not classified elsewhere)
+                            (only X7125/X6913/X6914)
+                    17.     Periodic settlement of legal claim, estate,
+                            lottery, or other such obligation, n.e.c.
+                            (only X7125/X6913/X6914)
+                    18.     Reimbursement from "flexible spending account"
+                            (only X7125/X6913/X6914)
+                    22.     Disbursements from loans (only X7125/X6913/X6914)
+                    -7.     Other
+                     0.     Inap. (no automatic deposits: X7122^=1)
+
+#######################################################################################
+#3. REMOVED VARIABLES
+#######################################################################################
+
+X5901,X5902,X5903,X5904,X5905,X6101,X6102,X6103,X6104,X6105,X6788,X6497,
+X6442,X302,X7100,X7111,X7127,X7128,X6790,X6854,X6855,X6856,X7129,X6857, 
+X6860,X7129,X6600,X6871,X6601,X6602,X6603,X6604,X6605,X6606,X6607,X6870,
+X6608,X6875,X6609,X6610,X6611,X6612,X6613,X6614,X6615,X6874,X6616,X6879,
+X6617,X6618,X6619,X6620,X6621,X6622,X6623,X6878,X6624,X6883,X6625,X6626,
+X6627,X6628,X6629,X6630,X6631,X6882,X6632,X6887,X6633,X6634,X6635,X6636,
+X6637,X6638,X6639,X6886,X6640,X6891,X6641,X6642,X6643,X6644,X6645,X6646,
+X6647,X6890,X6656,X6895,X6657,X6658,X6659,X6660,X6661,X6662,X6663,X6894,
+X6873,X6877,X6881,X6885,X6889,X6893,X6897,X7065,X7066,X7067,X7068,X7069,
+X7070,X7076,X7079,X7082,X7085,X7088,X7091,X404,X7131,X7803,X7826,X7849,
+X7903,X7926,X7949,X7584,X7804,X7827,X7850,X7904,X7927,X7950,X7173,X7174,
+X7175,X7176,X7177,X7178,X7584,X7812,X7835,X7858,X7912,X7935,X7958,X7817,
+X7840,X7863,X7917,X7940,X7963,X7818,X7841,X7864,X7918,X7941,X7964,X7818,
+X7841,X7864,X7918,X7941,X7964,X410,X7071,X7072,X7073,X7977,X428,X429
+X430,X6872,X6876,X6880,X6884,X6888,X6892,X6896
+
+

@@ -1,0 +1,15 @@
+New Questions: 
+
+1) X7788, X7789, a new financial emergency question was added to 
+account for the option to work more
+2) X7210-X7215, new questions asking for whose education are the 
+education loans in the mop-up portion of the education loan section
+
+New codes:
+
+1) Related to the new hypothetical financial emergency questions, 
+X7775 has a new code of 5 for “get another job/work more”
+2) For X9300-X9305, a new code was added: 4.    *POST-GRADUATION 
+GRACE PERIOD OR STILL ENROLLED
+3) For X4020/X4024/X4028, miscellaneous assets, there is a new code 
+of 85 for cryptocurrency
