@@ -13,6 +13,7 @@ Run from the repo root with the project virtualenv:
 .venv/bin/python standard_errors.py   # 2025 standard errors (Fed MEANIT method)
 .venv/bin/python compare_sources.py   # SCF vs Census SIPP comparison
 .venv/bin/python plot.py              # figures/*.png
+.venv/bin/python make_readme.py       # README.md, numbers recomputed from raw data
 ```
 
 ## Data rules
@@ -51,5 +52,7 @@ Run from the repo root with the project virtualenv:
 - Say "reference person", not "head", and name whose education it is (theirs or their parents').
 - "College" means a bachelor's degree or higher, not "went to college".
 - Before calling a figure done, check every printed number against `data/processed/`.
+- Never type numbers into the README or other docs by hand, and never read them off a figure.
+  They must be computed from the original source by a script (`make_readme.py`).
 - Report margins of error with any claim about change over time.
 - Medians describe the typical family. Means are driven by the top 10%, so label them clearly.
